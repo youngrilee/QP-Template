@@ -1,0 +1,40 @@
+\usepackage[american]{babel} 
+\usepackage{amsmath}   % for math
+\numberwithin{equation}{section}
+\usepackage{bm}        % bold
+\usepackage{csquotes}
+\usepackage[bold-style=ISO]{unicode-math}
+%\setmainfont[Ligatures=NoCommon]{Latin Modern Roman}
+%\setmathfont{Latin Modern Math}[
+%script-features = {
+%  RawFeature = {ssty=0}
+%},
+%sscript-features = {
+%  RawFeature = {ssty=0}
+%}
+%] % disable wide glyph for subscripts
+
+\usepackage{booktabs} % for tables
+\usepackage{makecell} % for newlines in table cells
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, allcolors=BlueViolet]{hyperref} % for links
+\usepackage{url}
+
+\usepackage{enumerate} % for custom lists
+
+\usepackage{xargs} % for comments
+
+\usepackage{graphicx}
+
+\usepackage{caption}
+\captionsetup[figure]{
+    position=above,
+}
+
+\DeclareLanguageMapping{american}{american-apa}
+\bibliography{references}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
